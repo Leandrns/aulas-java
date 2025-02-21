@@ -1,4 +1,4 @@
-package br.com.fiap.praticando;
+package br.com.fiap.praticando.entradadados;
 
 import java.util.Scanner;
 
