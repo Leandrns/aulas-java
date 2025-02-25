@@ -4,14 +4,13 @@ import javax.swing.*;
 
 public class AreaCirculoComJanela {
     public static void main(String[] args) {
-        final float PI = 3.14f;
-        float raio, areaCirculo;
+        double raio, areaCirculo;
         String aux;
 
         try {
             aux = JOptionPane.showInputDialog("Digite o valor do raio do círculo:");
-            raio = Float.parseFloat(aux);
-            areaCirculo = PI*(raio*raio);
+            raio = Double.parseDouble(aux);
+            areaCirculo = Math.PI*(Math.pow(raio, 2));
             JOptionPane.showMessageDialog(null, "A área do círculo é: " + areaCirculo + "cm²");
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Formato de número incorreto!");
